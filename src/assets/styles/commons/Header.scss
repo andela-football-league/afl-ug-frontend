@@ -1,4 +1,4 @@
-$screen-large: 'screen and (min-width: 1920px) and (max-height: 1080px)';
+$screen-large: 'screen and (min-width: 1920px)';
 
 body {
 	margin: 0;
@@ -14,13 +14,12 @@ body {
 
 .header-img {
 	display: flex;
-	flex-flow: unset;
 }
 
 .header-logo {
+	display: flex;
+	justify-content: center;
 	width: 16.5%;
-	padding-left: 1.5625rem;
-	padding-right: 1.5625rem;
 }
 
 .header-section {

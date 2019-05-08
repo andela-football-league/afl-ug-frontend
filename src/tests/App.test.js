@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import Home from '../containers/Home';
+import Home from '../containers/DefaultLayout';
 import createAFLStore from '../store/index';
 
 it('renders without crashing', () => {

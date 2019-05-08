@@ -14,6 +14,7 @@ const app = (
 						<Route
 							path={route.path}
 							component={route.component}
+							name={route.name}
 							key={route.path}
 						/>
 					);

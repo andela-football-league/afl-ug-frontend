@@ -1,4 +1,4 @@
-$screen-large: 'screen and (min-width: 1920px) and (max-height: 1080px)';
+$screen-large: 'screen and (min-width: 1920px)';
 
 body {
 	margin: 0;
@@ -134,5 +134,14 @@ h3 {
 }
 
 .footer-logo {
+	display: flex;
+	justify-content: space-around;
+	@media #{$screen-large} {
+		height: 180px;
+	}
+	height: 150px;
+}
+
+.footer-logo img {
 	width: 20%;
 }

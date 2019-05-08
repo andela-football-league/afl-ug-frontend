@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import '../../assets/styles/commons/Header.scss';
 import AFL from '../../assets/images/AFL.svg';
 
@@ -24,10 +25,7 @@ const Header = (props) => {
 				</div>
 				<div className="header-logo">
 					<img
-						src={
-							AFL ||
-							'https://s3.us-east-2.amazonaws.com/afl1/AFL-02.svg'
-						}
+						src={AFL || 'https://s3.us-east-2.amazonaws.com/afl1/AFL-02.svg'}
 						alt="AFL logo"
 					/>
 				</div>
@@ -46,9 +44,7 @@ const Header = (props) => {
 					</div>
 				</div>
 			</div>
-			<div>
-				<h1 className="heading">{pageTitle}</h1>
-			</div>
+			<div>{pageTitle ? <h1 className="heading">{pageTitle}</h1> : ''}</div>
 		</header>
 	);
 };
@@ -63,4 +59,4 @@ Header.propTypes = {
 	loggedIn: PropTypes.bool,
 };
 
-export default Header;
+export default connect()(Header);

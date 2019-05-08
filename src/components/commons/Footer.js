@@ -38,9 +38,8 @@ const Footer = () => (
 			</div>
 		</div>
 		<div className="right-footer">
-			<div>
+			<div className="footer-logo">
 				<img
-					className="footer-logo"
 					src={
 						AFL ||
 						'https://s3.us-east-2.amazonaws.com/afl1/AFL-02.svg'
