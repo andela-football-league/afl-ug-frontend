@@ -1,0 +1,84 @@
+$screen-large: 'screen and (min-width: 1920px)';
+
+body {
+	margin: 0;
+	font-family: Helvetica, monospace;
+}
+
+.header-container {
+	height: 20%;
+	width: 100%;
+	background-image: url('../../images/Headerbg.png');
+	background-repeat: no-repeat;
+}
+
+.header-img {
+	display: flex;
+}
+
+.header-logo {
+	display: flex;
+	justify-content: center;
+	width: 16.5%;
+}
+
+.header-section {
+	width: 41%;
+}
+
+.top-div {
+	display: flex;
+	align-content: unset;
+	height: 50%;
+	border-bottom: solid 3px white;
+}
+
+.log {
+	color: white;
+	margin: 0;
+	@media #{$screen-large} {
+		padding-top: 10%;
+		padding-left: 85%;
+	}
+	padding-top: 15%;
+	padding-left: 82%;
+}
+
+.reg {
+	color: white;
+	margin: 0;
+	@media #{$screen-large} {
+		padding-top: 10%;
+		padding-right: 82%;
+	}
+	padding-top: 15%;
+	padding-right: 75%;
+}
+
+.bottom-headings {
+	padding-top: 3%;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+	color: white;
+}
+
+.heading {
+	margin: 0;
+	font-size: 3em;
+	color: #ffaf30;
+}
+
+.header-section button {
+	font-weight: bold;
+	font-size: 1.8em;
+	color: white;
+	background-color: transparent;
+	border: 0;
+}
+
+.header-section button:hover {
+	font-weight: bold;
+	cursor: pointer;
+	color: #ffaf30;
+}
