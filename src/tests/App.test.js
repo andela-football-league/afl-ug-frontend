@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
+import { Provider } from 'mobx-react';
 import Home from '../containers/DefaultLayout';
-import createAFLStore from '../store/index';
+import AFLStores from '../stores/index';
 
 it('renders without crashing', () => {
 	const div = document.createElement('div');
 	ReactDOM.render(
-		<Provider store={createAFLStore()}>
+		<Provider {...AFLStores}>
 			<Home />
 		</Provider>,
 		div,

@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 import Header from '../components/commons/Header';
 import Footer from '../components/commons/Footer';
 import '../assets/styles/Default.scss';
@@ -25,4 +24,4 @@ DefaultLayout.propTypes = {
 	pageTitle: PropTypes.string,
 };
 
-export default connect()(DefaultLayout);
+export default DefaultLayout;

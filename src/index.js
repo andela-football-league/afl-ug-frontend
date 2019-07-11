@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
+import { Provider } from 'mobx-react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import createAFLStore from './store/index';
+import AFLStores from './stores/index';
 import routes from './routes/index';
 
+window._____APP_STATE_____ = AFLStores;
+
 const app = (
-	<Provider store={createAFLStore()}>
+	<Provider {...AFLStores}>
 		<Router>
 			<Switch>
 				{routes.map((route) => {

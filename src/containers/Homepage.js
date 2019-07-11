@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { Container } from 'semantic-ui-react';
 
 const Homepage = () => (
@@ -8,4 +7,4 @@ const Homepage = () => (
 	</div>
 );
 
-export default connect()(Homepage);
+export default Homepage;
